@@ -1,2 +1,11 @@
-example_setting:
-  default: true
+hero_heading:
+  default: ""
+  type: string
+
+hero_subtext:
+  default: ""
+  type: string
+
+hero_image:
+  default: ""
+  type: upload

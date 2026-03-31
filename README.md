@@ -2,4 +2,4 @@
 
 **Theme Summary**
 
-For more information, please see: **url to meta topic**
+A hero banner for the Accounting Capital community featuring a heading, subtext, and an image.
