@@ -30,11 +30,8 @@ export default class HeroBanner extends Component {
 
             {{#if settings.hero_image}}
               <div
-                class="hero-image"
-                style={{concat
-                  "background-image: url("
-                  settings.hero_image
-                  ");"
+                style={{trustHTML
+                  (concat "background-image: url(" this.imageUrl ")")
                 }}
               ></div>
             {{/if}}
