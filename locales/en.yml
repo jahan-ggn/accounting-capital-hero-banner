@@ -1,0 +1,6 @@
+en:
+  theme_metadata:
+    description: A hero banner for the Accounting Capital community featuring a heading,
+      subtext, and an image.
+    settings:
+      example_setting: A description of a setting.
