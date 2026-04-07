@@ -7,3 +7,4 @@ en:
       hero_heading: Main heading text displayed in the hero banner
       hero_subtext: Supporting subtext displayed below the heading
       hero_image: Upload an image to display in the hero banner
+      hero_section_background: "CSS color value for hero background"

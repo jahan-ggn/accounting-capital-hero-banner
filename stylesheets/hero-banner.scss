@@ -15,7 +15,7 @@ body:not(.categories-list, .navigation-topics, .navigation-category)
   display: flex;
   justify-content: center;
   height: 280px;
-  background-color: #f6f6f7;
+  background-color: $hero-section-background;
   border-radius: var(--size-400);
   margin-bottom: var(--size-900);
   padding: 0 var(--size-500);

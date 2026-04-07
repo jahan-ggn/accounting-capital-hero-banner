@@ -9,3 +9,7 @@ hero_subtext:
 hero_image:
   default: ""
   type: upload
+
+hero_section_background:
+  default: "#f6f6f7"
+  type: string
