@@ -48,6 +48,11 @@ body:not(.categories-list, .navigation-topics, .navigation-category)
   font-size: 32px;
   line-height: 40px;
 
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+
   @media (width <= 768px) {
     font-weight: 600;
     font-size: 32px;
@@ -78,23 +83,15 @@ body:not(.categories-list, .navigation-topics, .navigation-category)
   font-size: 1rem;
   margin-block: 2em 0;
   z-index: 1;
+  width: 100%;
 }
 
-.hero-banner-box .search-menu-container:has(.menu-panel) .search-input {
-  border: 1px solid transparent;
-  z-index: 1201;
-}
-
-.hero-banner-box .search-menu-container .menu-panel::after {
-  top: -58px;
-  background-color: var(--secondary);
-}
-
-.hero-banner-box .search-menu-container .clear-search {
-  display: flex;
-  align-items: center;
-}
-
-.hero-banner-box .search-menu-container .search-link {
-  padding-inline: 0;
+.hero-section-header {
+  .menu-panel.search-menu-panel ul {
+    font-size: 0.875rem !important;
+    line-height: var(--size-500) !important;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+  }
 }
