@@ -1,14 +1,18 @@
 import Component from "@glimmer/component";
 import { concat } from "@ember/helper";
+import { service } from "@ember/service";
 import { trustHTML } from "@ember/template";
 import SearchMenu from "discourse/components/search-menu";
 
 export default class HeroBanner extends Component {
+  @service router;
+
   get shouldDisplay() {
-    return !!(
-      settings.hero_heading ||
-      settings.hero_subtext ||
-      settings.hero_image
+    const currentRoute = this.router.currentRouteName;
+
+    return (
+      !currentRoute.startsWith("admin") &&
+      !!(settings.hero_heading || settings.hero_subtext || settings.hero_image)
     );
   }
 

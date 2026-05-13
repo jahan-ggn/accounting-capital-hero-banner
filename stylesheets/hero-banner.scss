@@ -6,11 +6,6 @@
   }
 }
 
-body:not(.categories-list, .navigation-topics, .navigation-category)
-  .hero-banner {
-  display: none;
-}
-
 .hero-banner-box {
   display: flex;
   justify-content: center;
