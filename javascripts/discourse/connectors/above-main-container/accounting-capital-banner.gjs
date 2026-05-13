@@ -8,11 +8,32 @@ export default class HeroBanner extends Component {
   @service router;
 
   get shouldDisplay() {
-    const currentRoute = this.router.currentRouteName;
+    const route = this.router.currentRouteName;
 
-    return (
-      !currentRoute.startsWith("admin") &&
-      !!(settings.hero_heading || settings.hero_subtext || settings.hero_image)
+    if (!route) {
+      return false;
+    }
+
+    if (route.startsWith("admin")) {
+      return false;
+    }
+
+    if (
+      route.includes("login") ||
+      route.includes("signup") ||
+      route.includes("password-reset")
+    ) {
+      return false;
+    }
+
+    if (route.startsWith("user.")) {
+      return false;
+    }
+
+    return !!(
+      settings.hero_heading ||
+      settings.hero_subtext ||
+      settings.hero_image
     );
   }
 
